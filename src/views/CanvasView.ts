@@ -5,7 +5,7 @@ import { Paddle } from "../sprites/Paddle";
 
 // types
 type TstartFunc = (view:CanvasView)=>void;
-type Tbrick = Brick | Paddle  ;// | Ball 
+type Tbrick = Brick | Paddle | Ball ;
 // the main class of the canavas view
 export class CanvasView{
     public canvas:HTMLCanvasElement;
