@@ -21,9 +21,7 @@ const setGameWin=(view: CanvasView):void=>{
     gameover = false;
 }
 
-const gameLoop=(view: CanvasView, bricks:Brick[],paddle:Paddle,ball:Ball)=>{ //  , ball:Ball
-    console.log('game Loooping ');
-    
+const gameLoop=(view: CanvasView, bricks:Brick[],paddle:Paddle,ball:Ball)=>{ //  , ball:Ball    
     view.clearCanvas();
     view.drawBricks(bricks);
     view.drawSprite(paddle);
