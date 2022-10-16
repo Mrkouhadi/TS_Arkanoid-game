@@ -22,6 +22,8 @@ const setGameWin=(view: CanvasView):void=>{
 }
 
 const gameLoop=(view: CanvasView, bricks:Brick[])=>{ //  paddle:Paddle, ball:Ball
+    console.log('game Loooping ');
+    
     view.clearCanvas();
     view.drawBricks(bricks);
     requestAnimationFrame(()=>{
