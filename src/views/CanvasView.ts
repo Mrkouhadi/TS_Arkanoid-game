@@ -5,7 +5,7 @@ import { Paddle } from "../sprites/Paddle";
 
 // types
 type TstartFunc = (view:CanvasView)=>void;
-type Tbrick = Ball | Brick | Paddle;
+type Tbrick = Brick  ;// |Ball  | Paddle;
 // the main class of the canavas view
 export class CanvasView{
     public canvas:HTMLCanvasElement;
@@ -40,7 +40,7 @@ export class CanvasView{
 
     drawSprite(brick:Tbrick ):void{
         if(!brick) return;
-        this.context?.drawImage(brick.image, brick.pos.x, brick.pos.y, brick.width, brick.height);
+        this.context?.drawImage(brick.img, brick.pos.x, brick.pos.y, brick.width, brick.height);
     }
 
     drawBricks(bricks: Brick[]):void{
