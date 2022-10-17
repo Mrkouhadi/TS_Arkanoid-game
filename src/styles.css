@@ -1,0 +1,52 @@
+:root {
+  --width: 1000px;
+  --height: 650px;
+}
+body {
+  background-color: antiquewhite;
+}
+#main {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  width: var(--width);
+  height: var(--height);
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  margin-bottom: 40px;
+}
+
+#display {
+  display: flex;
+  justify-content: space-between;
+  width: var(--width);
+  margin-top: 20px;
+}
+
+#score,
+#info {
+  width: 200px;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #8180cf;
+  color: aliceblue;
+}
