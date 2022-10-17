@@ -51,10 +51,9 @@ const startGame=(view: CanvasView)=>{
     // create the Ball
     const ball = new Ball(BALL_SIZE, {x:BALL_STARTX, y: BALL_STARTY}, BALL_SPEED, BALL_IMAGE )
     // create the Paddle 
-    const paddle = new Paddle( PADDLE_SPEED, PADDLE_WIDTH,PADDLE_HEIGHT,{x: PADDLE_STARTX, y:view.canvas.height - PADDLE_HEIGHT},PADDLE_IMAGE)
+    const paddle = new Paddle( PADDLE_SPEED, PADDLE_WIDTH,PADDLE_HEIGHT,{x: PADDLE_STARTX, y:view.canvas.height - PADDLE_HEIGHT },PADDLE_IMAGE)
     gameLoop(view, bricks,paddle, ball)
 }
-
 // generate a canvas view
 const view = new CanvasView('playField');
 view.initStartButton(startGame);
