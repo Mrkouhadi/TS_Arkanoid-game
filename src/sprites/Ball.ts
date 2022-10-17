@@ -4,10 +4,10 @@ export class Ball{
     private speed:Vector;
     private ballImage:HTMLImageElement = new Image();
     constructor(
-        private ballSize:number, private position:Vector,
+        public ballSize:number, private position:Vector,
         public ballSpeed:number, public image:string
     ){
-        this.speed = {x:ballSpeed, y:ballSpeed}
+        this.speed = {x:ballSpeed, y:-ballSpeed}
         this.ballImage.src = image; 
     }
 
